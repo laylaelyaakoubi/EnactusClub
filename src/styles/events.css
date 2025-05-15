@@ -1,0 +1,110 @@
+/* src/styles/events.css */
+.events {
+  padding: 5rem 0;
+  background-color: var(--background-light);
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.events-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .event-card {
+    flex-direction: row;
+  }
+}
+
+.event-date {
+  background-color: #e5efff;
+  color: var(--primary-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 120px;
+}
+
+.event-day {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.event-month {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+.event-year {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  opacity: 0.8;
+}
+
+.event-details {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.event-title {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.event-description {
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+}
+
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .event-meta {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+.event-meta-item {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.event-meta-item svg {
+  margin-right: 0.5rem;
+  opacity: 0.7;
+}
